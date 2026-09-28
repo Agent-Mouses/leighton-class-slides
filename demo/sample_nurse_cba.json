@@ -1,0 +1,147 @@
+{
+  "document": "sample_nurse_cba.pdf",
+  "note": "Synthetic sample for methodological demonstration only.",
+  "parties": {
+    "employer": "Memorial Community Hospital",
+    "union": "United Nurses Association, Local 4021"
+  },
+  "term": "2023-01-01 to 2027-12-31",
+  "n_articles": 6,
+  "n_provisions": 12,
+  "indices": {
+    "SPI_staffing_provisions_index_0_4": 4,
+    "PSI_patient_safety_index_0_2": 2,
+    "SPI_basis": {
+      "has_binding_standards_S1": true,
+      "has_staffing_committee_S3": true
+    },
+    "PSI_basis": {
+      "has_ADO_P1": true,
+      "has_safety_forum_P2": true
+    }
+  },
+  "provisions": [
+    {
+      "provision_id": "P001",
+      "article": 1,
+      "article_title": "Recognition",
+      "clause": "1.1",
+      "text": "The Hospital recognizes the Association as the sole and exclusive bargaining representative for all full-time and part-time registered nurses employed at the Hospital, excluding supervisors, managers, and confidential employees as defined by the National Labor Relations Act.",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "provision_id": "P002",
+      "article": 12,
+      "article_title": "Staffing And Nurse-To-Patient Ratios",
+      "clause": "12.1",
+      "text": "Staffing Standards. The Hospital shall maintain minimum registered nurse-to-patient ratios at all times, on every shift, in the following units: Unit                                               Maximum Patients per RN Intensive Care Unit (ICU)                          1:2 Emergency Department                               1:4 Medical/Surgical                                   1:5 Telemetry                                          1:4 Labor & Delivery                                   1:2",
+      "tags": [
+        "S — Staffing"
+      ]
+    },
+    {
+      "provision_id": "P003",
+      "article": 12,
+      "article_title": "Staffing And Nurse-To-Patient Ratios",
+      "clause": "12.2",
+      "text": "Workload Limits. No nurse shall be assigned patients beyond the ratios in Section 12.1. When census exceeds staffed capacity, the Hospital shall call in additional qualified staff before increasing any nurse's assignment.",
+      "tags": [
+        "S — Staffing"
+      ]
+    },
+    {
+      "provision_id": "P004",
+      "article": 12,
+      "article_title": "Staffing And Nurse-To-Patient Ratios",
+      "clause": "12.3",
+      "text": "Floating. Nurses shall float only to units in which they are competent and oriented. A nurse may not be floated more than once per shift.",
+      "tags": [
+        "S — Staffing"
+      ]
+    },
+    {
+      "provision_id": "P005",
+      "article": 13,
+      "article_title": "Staffing Committee",
+      "clause": "13.1",
+      "text": "A joint Staffing Committee composed of equal numbers of Association-appointed nurses and Hospital-appointed representatives shall meet no less than monthly to review staffing plans, unit acuity, and compliance with Article 12.",
+      "tags": [
+        "S3 — Staffing Committee"
+      ]
+    },
+    {
+      "provision_id": "P006",
+      "article": 13,
+      "article_title": "Staffing Committee",
+      "clause": "13.2",
+      "text": "The Committee shall have authority to recommend adjustments to the staffing plan. Unresolved disputes shall be subject to the grievance procedure in Article 20.",
+      "tags": [
+        "S3 — Staffing Committee",
+        "Enforcement — Grievance/Arbitration"
+      ]
+    },
+    {
+      "provision_id": "P007",
+      "article": 14,
+      "article_title": "Patient Safety And Assignment Despite Objection",
+      "clause": "14.1",
+      "text": "Safe Assignment. A nurse who believes an assignment is unsafe may file an Assignment Despite Objection (ADO) form. Filing an ADO shall not subject the nurse to discipline or retaliation.",
+      "tags": [
+        "P — Patient Safety"
+      ]
+    },
+    {
+      "provision_id": "P008",
+      "article": 14,
+      "article_title": "Patient Safety And Assignment Despite Objection",
+      "clause": "14.2",
+      "text": "Safety Forum. A standing Nursing Practice and Safety Committee shall review all ADO submissions quarterly and report findings to the Chief Nursing Officer.",
+      "tags": [
+        "P — Patient Safety"
+      ]
+    },
+    {
+      "provision_id": "P009",
+      "article": 14,
+      "article_title": "Patient Safety And Assignment Despite Objection",
+      "clause": "14.3",
+      "text": "Occupational Health. The Hospital shall provide safe patient handling equipment and shall maintain a needlestick-injury prevention program consistent with OSHA standards.",
+      "tags": [
+        "P — Patient Safety"
+      ]
+    },
+    {
+      "provision_id": "P010",
+      "article": 20,
+      "article_title": "Grievance And Arbitration",
+      "clause": "20.1",
+      "text": "Any dispute concerning the interpretation or application of this Agreement shall be processed through the following steps: (1) informal discussion with the immediate supervisor; (2) written grievance to the Nurse Manager; (3) appeal to the Chief Nursing Officer; (4) final and binding arbitration.",
+      "tags": [
+        "S — Staffing",
+        "Enforcement — Grievance/Arbitration"
+      ]
+    },
+    {
+      "provision_id": "P011",
+      "article": 20,
+      "article_title": "Grievance And Arbitration",
+      "clause": "20.2",
+      "text": "The arbitrator shall have no authority to add to, subtract from, or modify the terms of this Agreement.",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "provision_id": "P012",
+      "article": 25,
+      "article_title": "Duration",
+      "clause": "25.1",
+      "text": "This Agreement shall be effective from January 1, 2023 through December 31, 2027, and shall renew automatically for successive one-year terms unless either party gives written notice of termination at least sixty (60) days prior to expiration. — End of sample excerpt. This is a synthetic document created for methodological demonstration only; it does not represent any real hospital or union. —",
+      "tags": [
+        "S — Staffing"
+      ]
+    }
+  ]
+}

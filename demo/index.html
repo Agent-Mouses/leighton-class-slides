@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF → Markdown → JSON — Contract Extraction Demo</title>
+<style>
+  :root{--bg:#1a1a2e;--card:#232342;--accent:#43d6b5;--yellow:#f4c542;--text:#e8ecf3;--muted:#9aa7bd;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;}
+  header{padding:28px 24px 12px;text-align:center;}
+  h1{color:var(--accent);margin:0 0 6px;font-size:1.7rem;}
+  .sub{color:var(--muted);font-size:.95rem;}
+  .flow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0;}
+  .step{background:var(--card);border:1px solid #33334f;border-radius:8px;padding:8px 16px;font-weight:600;}
+  .arrow{color:var(--accent);font-size:1.3rem;align-self:center;}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;padding:0 20px 30px;max-width:1500px;margin:0 auto;}
+  @media(max-width:1000px){.grid{grid-template-columns:1fr;}}
+  .col{background:var(--card);border:1px solid #33334f;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-height:0;}
+  .col h2{margin:0;padding:12px 16px;font-size:1.05rem;background:#2b2b50;border-bottom:1px solid #3a3a5c;}
+  .col h2 small{color:var(--muted);font-weight:400;font-size:.8rem;}
+  .col .body{padding:14px 16px;overflow:auto;max-height:70vh;}
+  pre{margin:0;white-space:pre-wrap;word-break:break-word;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12px;line-height:1.5;color:#d6e0f0;}
+  .pdfwrap{padding:0;}
+  embed{width:100%;height:70vh;border:0;background:#fff;}
+  a.dl{color:var(--yellow);text-decoration:none;font-size:.85rem;}
+  a.dl:hover{text-decoration:underline;}
+  .note{color:var(--muted);font-size:.8rem;padding:0 24px 24px;text-align:center;}
+  code.k{color:var(--yellow);}
+</style></head><body>
+<header>
+  <h1>From PDF to Structured Data</h1>
+  <div class="sub">A worked example: turning a nurse collective bargaining agreement into machine-readable Markdown and JSON.</div>
+  <div class="flow">
+    <div class="step">📄 PDF contract</div><div class="arrow">→</div>
+    <div class="step">📝 Markdown</div><div class="arrow">→</div>
+    <div class="step">🔧 JSON (provision-level)</div>
+  </div>
+  <div class="sub">Pipeline: <code class="k">pdftotext</code> extracts the text → segment into articles &amp; numbered clauses → tag each provision by domain and compute index scores (SPI 0–4, PSI 0–2).</div>
+</header>
+
+<div class="grid">
+  <div class="col">
+    <h2>1 · Source PDF <small>&nbsp;<a class="dl" href="sample_nurse_cba.pdf" download>download</a></small></h2>
+    <div class="body pdfwrap"><embed src="sample_nurse_cba.pdf" type="application/pdf"></div>
+  </div>
+  <div class="col">
+    <h2>2 · Extracted Markdown <small>&nbsp;<a class="dl" href="sample_nurse_cba.md" download>raw .md</a></small></h2>
+    <div class="body"><pre id="md">loading…</pre></div>
+  </div>
+  <div class="col">
+    <h2>3 · Provision JSON <small>&nbsp;<a class="dl" href="sample_nurse_cba.json" download>raw .json</a></small></h2>
+    <div class="body"><pre id="json">loading…</pre></div>
+  </div>
+</div>
+<div class="note">Synthetic sample for methodological demonstration only — not a real hospital or union. Part of the PubH 8435 measurement walkthrough.</div>
+
+<script>
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  fetch("sample_nurse_cba.md").then(r=>r.text()).then(t=>{document.getElementById("md").textContent=t;}).catch(e=>{document.getElementById("md").textContent="(load error) "+e;});
+  fetch("sample_nurse_cba.json").then(r=>r.text()).then(t=>{document.getElementById("json").textContent=t;}).catch(e=>{document.getElementById("json").textContent="(load error) "+e;});
+</script>
+</body></html>
