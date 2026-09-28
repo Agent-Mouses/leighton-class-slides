@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PubH 8435 Guest Talk — Hong-Lun Tiunn — Sept 28, 2026</title>
+<style>
+  /* ===== UPSCALED / PRESENTATION-FRIENDLY THEME (v3) ===== */
+  :root { --bg:#1a1a2e; --text:#f0f0f5; --accent:#4ecdc4; --muted:#aab; --yellow:#ffe66d; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-snap-type:y mandatory; scroll-behavior:smooth; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; color:var(--text); background:var(--bg); line-height:1.5; }
+  .slide { min-height:100vh; scroll-snap-align:start; display:flex; flex-direction:column; justify-content:center; padding:56px 84px; border-bottom:1px solid #333; position:relative; overflow:auto; }
+
+  h1 { font-size:2.9rem; margin-bottom:0.5rem; color:var(--accent); line-height:1.15; }
+  h2 { font-size:2.2rem; margin-bottom:1.1rem; color:var(--accent); font-weight:600; line-height:1.2; }
+  h3 { font-size:1.45rem; margin:0.9rem 0 0.5rem; color:var(--yellow); }
+  p, li { font-size:1.45rem; margin-bottom:0.7rem; line-height:1.45; }
+  ul, ol { padding-left:1.8rem; }
+  li { margin-bottom:0.6rem; }
+  .subtitle { font-size:1.45rem; color:var(--muted); margin-bottom:1.4rem; }
+  .section-label { font-size:1.15rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); margin-bottom:0.7rem; }
+  table { border-collapse:collapse; width:100%; margin:1.2rem 0; font-size:1.3rem; }
+  th, td { border:1px solid #4a4a66; padding:0.7rem 1rem; text-align:left; vertical-align:top; }
+  th { background:#2d2d44; font-weight:700; color:var(--accent); }
+  tr:nth-child(even) { background:rgba(255,255,255,0.04); }
+  .highlight { background:rgba(78,205,196,0.12); border-left:5px solid var(--accent); padding:0.9rem 1.3rem; margin:1.2rem 0; font-size:1.4rem; font-style:normal; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+  .stat-box { background:#2d2d44; border-radius:8px; padding:1.2rem; text-align:center; }
+  .stat-box .num { font-size:2.4rem; font-weight:bold; color:var(--accent); }
+  .stat-box .label { font-size:1.15rem; color:var(--muted); }
+  .cite { color:var(--muted); font-size:1.1rem; }
+  strong { color:var(--yellow); }
+
+  /* --- neutralize the small inline font-sizes baked into the original deck --- */
+  .slide [style*="font-size:0.85rem"], .slide [style*="font-size:0.9rem"],
+  .slide [style*="font-size:0.95rem"], .slide [style*="font-size:1rem"],
+  .slide [style*="font-size:1.05rem"], .slide [style*="font-size:1.1rem"] { font-size:1.35rem !important; }
+  .slide h3[style*="font-size"] { font-size:1.45rem !important; }
+  .slide table[style*="font-size"] { font-size:1.3rem !important; }
+
+  @media print { .slide { min-height:auto; page-break-after:always; padding:2rem 3rem; overflow:visible; } }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Title -->
+<section class="slide" style="text-align:center;">
+  <h1>Staffing and Patient Safety Provisions in Nurse Collective Bargaining Agreements in U.S. Hospitals</h1>
+  <p class="subtitle">Dissertation Proposal Defense</p>
+  <p style="margin-top:2rem; font-size:1.1rem;">Hong-Lun Tiunn<br>
+  Doctoral Student, Health Policy<br>
+  Milken Institute School of Public Health, George Washington University</p>
+  <p style="margin-top:1.5rem; color:var(--muted);">Committee: Dr. Patricia Pittman (Chair) · Dr. Leighton Ku · Dr. Y. Tony Yang</p>
+  <p style="color:var(--muted);">August 20, 2026</p>
+</section>
+
+<!-- SLIDE 2: Background and Literature Review -->
+<section class="slide">
+  <p class="section-label">Background and Literature Review</p>
+  <h2>Nurse Unionization, Staffing, and the Measurement Gap</h2>
+  <h3>Nurse Collective Bargaining in the United States</h3>
+  <ul>
+    <li>Nurse organizing accelerated after the 1974 NLRA amendments extended coverage to nonprofit hospitals <span class="cite">(Becker, Sloan & Steinwald, 1982)</span></li>
+    <li>27.8% of acute care hospitals have confirmed RN union representation <span class="cite">(study panel: NLRB + FMCS + union lists)</span>; 13.2% of RNs report union membership <span class="cite">(Bureau of Labor Statistics, CPS)</span></li>
+    <li>Major unions: NNU (175,000 RNs) <span class="cite">(NNU, 2024)</span>, SEIU Healthcare, AFT Nurses & Health Professionals (120,000 RNs) <span class="cite">(AFT, 2024)</span></li>
+    <li>CBAs are legally binding under the National Labor Relations Act, enforceable through grievance arbitration</li>
+  </ul>
+  <h3>Prior Research</h3>
+  <ul>
+    <li>Nurse staffing is associated with patient mortality and adverse events <span class="cite">(Aiken et al., 2002; Needleman et al., 2002; Kane et al., 2007)</span></li>
+    <li>Unionized hospitals have higher RN-to-patient ratios <span class="cite">(Ash & Seago, 2004; Dube, Kaplan & Thompson, 2016)</span></li>
+    <li>However, all studies treat unionization as a binary variable — union present or absent</li>
+    <li>Mechanisms through which unions affect outcomes remain insufficiently understood because contract content has never been measured <span class="cite">(Dierkes et al., 2024)</span></li>
+    <li>Union membership alone is not associated with turnover, yet members report worse conditions <span class="cite">(Soffen, 2026)</span></li>
+  </ul>
+  <div class="highlight">The relationship between unionization and outcomes is more complex than a binary variable can capture. No study has yet measured what nurse CBAs actually contain regarding staffing and patient safety provisions. This dissertation addresses that gap by developing the first provision-level measurement of CBA content and testing associations with hospital outcomes.</div>
+</section>
+
+<!-- SLIDE 3: Research Questions -->
+<section class="slide">
+  <p class="section-label">Research Questions</p>
+  <h2>Three Integrated Papers</h2>
+  <table>
+    <tr><th>Paper</th><th>Research Question</th></tr>
+    <tr><td>1</td><td>What provisions do nurse CBAs contain for staffing and patient safety, and how do they vary across union types, states, and time?</td></tr>
+    <tr><td>2</td><td>Are hospitals with stronger staffing and safety provisions associated with more favorable patient outcomes?</td></tr>
+    <tr><td>3</td><td>Are stronger provisions associated with more favorable RN-level outcomes?</td></tr>
+  </table>
+</section>
+
+<!-- SLIDE 4: Hypotheses -->
+<section class="slide">
+  <p class="section-label">Research Questions</p>
+  <h2>Hypotheses by Paper</h2>
+  <h3>Paper 1 — Exploratory (working hypothesis)</h3>
+  <p>Non-economic provisions addressing staffing and patient safety are identifiable and vary systematically across contracts.</p>
+  <h3>Papers 2 &amp; 3</h3>
+  <table>
+    <tr><th>H</th><th>Hypothesis</th><th>Paper</th></tr>
+    <tr><td>H1</td><td>Hospitals with higher Staffing Provisions Index scores are associated with more favorable patient outcomes</td><td>2</td></tr>
+    <tr><td>H2</td><td>Hospitals with higher Patient Safety Index scores are associated with more favorable patient outcomes</td><td>2</td></tr>
+    <tr><td>H3</td><td>Staffing provisions show stronger associations with adverse events (infections, mortality); safety provisions show stronger associations with patient experience (HCAHPS)</td><td>2</td></tr>
+    <tr><td>H4</td><td>Hospitals with stronger provisions are associated with greater workforce stability (higher RN/bed, lower vacancy, lower contract labor)</td><td>3</td></tr>
+    <tr><td>H5</td><td>CBA provisions show stronger associations in non-Magnet hospitals (substitution hypothesis)</td><td>2 &amp; 3</td></tr>
+    <tr><td>H6</td><td>The association between staffing committee provisions (S3) and outcomes is stronger in hospitals that also have staffing standards (S1) — complementarity <span class="cite">(cf. Ichniowski et al., 1997; Han, Pittman &amp; Barnow, 2021)</span></td><td>2 &amp; 3</td></tr>
+  </table>
+</section>
+
+<!-- SLIDE 5: Research Design -->
+<section class="slide">
+  <p class="section-label">Research Design</p>
+  <h2>Research Design: Sequential QUAL → quan Mixed Methods</h2>
+  <p>The measurement infrastructure follows a sequential QUAL → quan mixed methods design <span class="cite">(Creswell &amp; Plano Clark, 2018)</span>.</p>
+  <div style="display:flex; gap:16px; margin:1rem 0;">
+    <div style="flex:1; border:2px solid var(--accent); border-radius:8px; padding:12px;">
+      <div style="font-size:1rem; color:var(--accent); font-weight:bold; margin-bottom:6px;">QUAL (Dominant Strand)</div>
+      <ul style="font-size:0.85rem;">
+        <li>Taxonomy development</li>
+        <li>Union staff validation</li>
+        <li>Iterative human review of classifications</li>
+        <li>Descriptive mapping of provision content</li>
+      </ul>
+      <p style="font-size:0.8rem; color:var(--muted); margin-top:6px;">= Paper 1</p>
+    </div>
+    <div style="display:flex; align-items:center; font-size:1.5rem; color:var(--accent);">→</div>
+    <div style="flex:1; border:2px solid var(--yellow); border-radius:8px; padding:12px;">
+      <div style="font-size:1rem; color:var(--yellow); font-weight:bold; margin-bottom:6px;">quan (Papers 2 &amp; 3)</div>
+      <ul style="font-size:0.85rem;">
+        <li>Quantitative tests of whether QUAL-derived measures predict outcomes</li>
+        <li>Index construction (SPI 0–4, PSI 0–2)</li>
+        <li>Hospital-year panel models</li>
+      </ul>
+      <p style="font-size:0.8rem; color:var(--muted); margin-top:6px;">= Papers 2 &amp; 3</p>
+    </div>
+  </div>
+  <h3>Integration</h3>
+  <p style="font-size:0.9rem;">Occurs at the <strong>building level</strong>: qualitative outputs (two-domain, six-subdomain coding scheme) are applied at scale with the assistance of a trained draft-tagging classifier. Categories must be developed inductively before they can be applied at scale — no prior validated, scalable classification system exists <span class="cite">(cf. Budd et al., 2004; Bae, 2010)</span>.</p>
+</section>
+
+<!-- SLIDE 5: Theoretical and Conceptual Framework -->
+<section class="slide">
+  <p class="section-label">Methods — Paper 1</p>
+  <h2>Theoretical and Conceptual Framework</h2>
+  <p>Non-economic CBA provisions are conceptualized as <strong>negotiated governance structures</strong> — formalized arrangements that specify: (a) what standards or constraints apply, (b) who has authority to raise, review, or resolve operational issues, and (c) what documentation, reporting, or accountability procedures occur when standards are not met.</p>
+  <h3>1. Institutional Theory <span class="cite">(DiMaggio & Powell, 1983)</span></h3>
+  <p>CBAs constitute one layer of the organizational governance environment. Provisions create formalized structures within hospitals.</p>
+  <h3>2. Practice Environment Scale <span class="cite">(PES-NWI; Lake, 2002)</span></h3>
+  <p>Identifies nurse participation in hospital affairs, staffing adequacy, and nursing foundations for quality of care as key dimensions. CBA committees may function as formalized practice environment structures.</p>
+  <h3>3. Professional Unionism <span class="cite">(Freeman & Medoff, 1984; Clark et al., 2001)</span></h3>
+  <p>Distinguishes the "monopoly face" of unions (wage effects) from the "voice face" (workplace governance). Non-economic CBA provisions represent the voice face.</p>
+</section>
+
+<!-- SLIDE 6: Data Sources and Corpus -->
+<section class="slide">
+  <p class="section-label">Methods — Paper 1</p>
+  <h2>Data Sources and Corpus Construction</h2>
+  <table>
+    <tr><th>Coding Approach</th><th>N Contracts</th><th>N Provisions</th><th>Effective Dates</th><th>Unions Represented</th></tr>
+    <tr><td>Hand-coded from scratch by researcher</td><td>214</td><td>85,629</td><td>1998–2023 (concentrated pre-2010)</td><td>Multi-union (SEIU, NNU, AFT, UFCW, independents)</td></tr>
+    <tr><td>ML draft-tagged → researcher confirms each individually</td><td>393</td><td>184,344</td><td>2000–2024 (concentrated 2015–2024)</td><td>Single union (AFT)</td></tr>
+    <tr><td><strong>Total — All human-validated</strong></td><td><strong>607</strong></td><td><strong>269,973</strong></td><td colspan="2"><strong>39 states, combined 2005–2024</strong></td></tr>
+  </table>
+  <p style="margin-top:1rem;">Data collection spanned 2025–2026; contracts processed as received. Publicly available contracts (OLMS, U.S. Dept. of Labor) arrived first and formed the training corpus. AFT partner contracts arrived later under a data agreement. Duplicates removed (minimal — earlier contracts skew older). All results reported with/without AFT-only as sensitivity.</p>
+</section>
+
+<!-- SLIDE 7b: Classification Pipeline -->
+<section class="slide">
+  <p class="section-label">Methods — Paper 1</p>
+  <h2>Classification Pipeline: End-to-End</h2>
+  <!-- Flowchart -->
+  <div style="display:flex; flex-direction:column; gap:10px; margin-top:1rem;">
+    <!-- Row 1: Acquisition -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:10px 16px; min-width:180px; text-align:center;">
+        <div style="font-size:0.85rem; color:var(--accent); font-weight:bold;">PDF Acquisition</div>
+        <div style="font-size:0.85rem;">607 contracts (OCR + direct extraction)</div>
+      </div>
+      <div style="color:var(--accent); font-size:1.3rem;">→</div>
+      <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:10px 16px; min-width:180px; text-align:center;">
+        <div style="font-size:0.85rem; color:var(--accent); font-weight:bold;">Provision Segmentation</div>
+        <div style="font-size:0.85rem;">269,973 provisions (median 368/contract)</div>
+      </div>
+      <div style="color:var(--accent); font-size:1.3rem;">→</div>
+      <div style="background:#2d2d44; border:2px solid var(--yellow); border-radius:8px; padding:10px 16px; min-width:180px; text-align:center;">
+        <div style="font-size:0.85rem; color:var(--yellow); font-weight:bold;">Split into Two Tracks</div>
+      </div>
+    </div>
+    <!-- Row 2: Two parallel tracks -->
+    <div style="display:flex; gap:20px; margin-left:40px;">
+      <div style="flex:1; border:2px solid var(--accent); border-radius:8px; padding:12px;">
+        <div style="font-size:0.9rem; color:var(--accent); font-weight:bold;">Track A: Hand-Coded</div>
+        <div style="font-size:0.85rem; margin-top:4px;">214 contracts, 85,629 provisions<br>Coded from scratch by researcher<br>→ Training corpus for Legal-BERT</div>
+      </div>
+      <div style="flex:1; border:2px solid var(--yellow); border-radius:8px; padding:12px;">
+        <div style="font-size:0.9rem; color:var(--yellow); font-weight:bold;">Track B: ML-Assisted</div>
+        <div style="font-size:0.85rem; margin-top:4px;">393 contracts, 184,344 provisions<br>Classifier draft-tags → researcher confirms each<br>(92% confirmed, 8% corrected)</div>
+      </div>
+    </div>
+    <!-- Row 3: Merge -->
+    <div style="display:flex; align-items:center; gap:10px; justify-content:center; margin-top:4px;">
+      <div style="color:var(--accent); font-size:1.3rem;">↓</div>
+    </div>
+    <div style="display:flex; align-items:center; gap:10px; justify-content:center;">
+      <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:10px 20px; text-align:center;">
+        <div style="font-size:0.9rem; color:var(--accent); font-weight:bold;">Merge: 269,973 Human-Validated Labels</div>
+      </div>
+      <div style="color:var(--accent); font-size:1.3rem;">→</div>
+      <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:10px 20px; text-align:center;">
+        <div style="font-size:0.9rem; color:var(--accent); font-weight:bold;">SPI (0–4) + PSI (0–2)</div>
+        <div style="font-size:0.8rem;">at hospital-year level</div>
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:1rem; font-size:0.95rem;"><strong>Hybrid human-ML design:</strong> ML accelerates (reduces coding time ~60%), human judgment validates. No label accepted without individual human review. This produces full-corpus coverage (269,973) with the rigor of hand-coding.</p>
+</section>
+
+<!-- SLIDE 8: Taxonomy Development and Structure -->
+<section class="slide">
+  <p class="section-label">Methods — Paper 1</p>
+  <h2>Taxonomy Development and Structure</h2>
+  <!-- Flowchart: Development Process (2 rows) -->
+  <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin:1rem 0;">
+    <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:8px 14px; text-align:center;">
+      <div style="font-size:0.8rem; color:var(--accent); font-weight:bold;">Step 1</div>
+      <div style="font-size:0.85rem;">Inductive open coding</div>
+    </div>
+    <div style="color:var(--accent); font-size:1.2rem;">→</div>
+    <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:8px 14px; text-align:center;">
+      <div style="font-size:0.8rem; color:var(--accent); font-weight:bold;">Step 2</div>
+      <div style="font-size:0.85rem;">Literature validation</div>
+    </div>
+    <div style="color:var(--accent); font-size:1.2rem;">→</div>
+    <div style="background:#2d2d44; border:2px solid #f59e0b; border-radius:8px; padding:8px 14px; text-align:center;">
+      <div style="font-size:0.8rem; color:#f59e0b; font-weight:bold;">Step 3</div>
+      <div style="font-size:0.85rem;">Formative consultation<br><span style="font-size:0.75rem;">(AFT + SEIU staff)</span></div>
+    </div>
+    <div style="color:var(--accent); font-size:1.2rem;">→</div>
+    <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:8px 14px; text-align:center;">
+      <div style="font-size:0.8rem; color:var(--accent); font-weight:bold;">Step 4</div>
+      <div style="font-size:0.85rem;">Iterative refinement<br><span style="font-size:0.75rem;">(113→214 contracts)</span></div>
+    </div>
+    <div style="color:var(--accent); font-size:1.2rem;">→</div>
+    <div style="background:#2d2d44; border:2px solid #f59e0b; border-radius:8px; padding:8px 14px; text-align:center;">
+      <div style="font-size:0.8rem; color:#f59e0b; font-weight:bold;">Step 5</div>
+      <div style="font-size:0.85rem;">Confirmatory review<br><span style="font-size:0.75rem;">(3 staff, Jul 2026)</span></div>
+    </div>
+  </div>
+  <!-- Result: Taxonomy Structure -->
+  <div style="display:flex; gap:12px; margin-top:1rem;">
+    <div style="flex:0 0 140px; background:#2d2d44; border-radius:8px; padding:12px; text-align:center; opacity:0.5;">
+      <div style="font-size:1.8rem; font-weight:bold; color:var(--muted);">X0</div>
+      <div style="font-size:0.85rem; color:var(--muted);">Economic<br>86.5%</div>
+      <div style="font-size:0.75rem; color:var(--muted); margin-top:4px;">excluded</div>
+    </div>
+    <div style="flex:1; border:2px solid var(--accent); border-radius:8px; padding:12px;">
+      <div style="font-size:0.9rem; font-weight:bold; color:var(--accent); margin-bottom:6px;">STAFFING DOMAIN</div>
+      <div style="font-size:0.9rem;"><strong>S1</strong> Staffing Standards — ratios, levels, agency limits</div>
+      <div style="font-size:0.9rem;"><strong>S2</strong> Workload & Assignment — floating, scheduling, low census</div>
+      <div style="font-size:0.9rem;"><strong>S3</strong> Staffing Forums — staffing committees, LM committees</div>
+    </div>
+    <div style="flex:1; border:2px solid #dc2626; border-radius:8px; padding:12px;">
+      <div style="font-size:0.9rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">PATIENT SAFETY DOMAIN</div>
+      <div style="font-size:0.9rem;"><strong>P1</strong> Safety Standards & ADO — ADO, occupational health</div>
+      <div style="font-size:0.9rem;"><strong>P2</strong> Safety Forums — nursing practice, safety committees</div>
+      <div style="font-size:0.9rem;"><strong>P3</strong> Reporting & Accountability — external reporting</div>
+    </div>
+  </div>
+  <p style="margin-top:1rem; font-size:0.95rem;"><strong>Category empiricism:</strong> Categories emerged from contract text, not from a predetermined framework. Informants proposed categories that contained zero provisions in the corpus.</p>
+</section>
+
+<!-- SLIDE 9: Validation -->
+<section class="slide">
+  <p class="section-label">Methods — Paper 1</p>
+  <h2>Validation and Trustworthiness</h2>
+  <p>Six strategies mapped to <span class="cite">Lincoln & Guba (1985)</span> criteria:</p>
+  <table>
+    <tr><th>Criterion</th><th>Strategy</th><th>Status</th></tr>
+    <tr><td>Credibility</td><td>Prolonged engagement (18+ months with corpus)</td><td>Complete</td></tr>
+    <tr><td>Credibility</td><td>Union staff triangulation (2 AFT informants)</td><td>Complete</td></tr>
+    <tr><td>Credibility</td><td>Union staff review — formative (AFT + SEIU, Mar 2025) + confirmatory (3 staff, Jul 2026)</td><td>Complete</td></tr>
+    <tr><td>Dependability</td><td>Anchoring bias check (50 blinded re-codes)</td><td>Planned (Sep 2026)</td></tr>
+    <tr><td>Confirmability</td><td>Audit trail (decision log, version-controlled)</td><td>Complete</td></tr>
+    <tr><td>Transferability</td><td>Thick description (provision-level examples)</td><td>Complete</td></tr>
+  </table>
+  <h3>July 2026 Confirmatory Union Staff Review</h3>
+  <p>Three AFT union staff reviewed taxonomy applied across all 607 contracts. Confirmed two-domain, six-subdomain structure. Endorsed boundary-case adjudications. Recommended no structural revisions.</p>
+</section>
+
+<!-- SLIDE 10: Index Construction -->
+<section class="slide">
+  <p class="section-label">Methods — Paper 1</p>
+  <h2>Index Construction: Staffing Provisions Index (SPI) and Patient Safety Index (PSI)</h2>
+  <h3>Staffing Provisions Index (SPI): Ordinal 0–4</h3>
+  <p>Based on the S1 × S3 interaction, reflecting the enforceability and specificity gradient:</p>
+  <table>
+    <tr><th>Score</th><th>Configuration</th><th>Interpretation</th></tr>
+    <tr><td>0</td><td>No staffing provisions</td><td>No contractual constraint</td></tr>
+    <tr><td>1</td><td>Workload provisions only (S2)</td><td>Indirect constraints</td></tr>
+    <tr><td>2</td><td>Committee without binding standards (S3 only)</td><td>"Process without power"</td></tr>
+    <tr><td>3</td><td>Binding standards without committee (S1 only)</td><td>Grievable but no forum</td></tr>
+    <tr><td>4</td><td>Both standards and committee (S1 + S3)</td><td>Grievable obligation + enforcement forum</td></tr>
+  </table>
+  <p>Hospitals accumulate provisions in a Guttman-scale hierarchy (error rate 4.2%, Mokken H = 0.615). Where both S1 and S3 are present, they co-occur 93% of the time — supporting the complementarity hypothesis <span class="cite">(cf. Ichniowski et al., 1997)</span>.</p>
+  <h3>Patient Safety Index (PSI): Ordinal 0–2</h3>
+  <p>Based on cumulative P1 + P2 specification:</p>
+  <table>
+    <tr><th>Score</th><th>Configuration</th><th>Interpretation</th></tr>
+    <tr><td>0</td><td>No safety provisions (P1 or P2)</td><td>No contractual safety governance</td></tr>
+    <tr><td>1</td><td>P1 only (safety standards/ADO) or P2 only (safety forums)</td><td>Partial: either protection or forum</td></tr>
+    <tr><td>2</td><td>Both P1 and P2</td><td>Standards + governance forum</td></tr>
+  </table>
+  <p>P3 (reporting/accountability) and S2 (workload/assignment) enter outcome models as separate binary covariates, based on principal component analysis showing they capture independent dimensions.</p>
+</section>
+
+<!-- TRANSITION SLIDE: Paper 1 → Papers 2 & 3 -->
+<section class="slide" style="display:flex; align-items:center; justify-content:center; text-align:center;">
+  <div>
+    <p style="font-size:1.1rem; color:var(--muted); margin-bottom:1rem;">Paper 1: Measurement Infrastructure ✓</p>
+    <h1 style="font-size:2.2rem; color:var(--accent);">Papers 2 &amp; 3</h1>
+    <p style="font-size:1.2rem; margin-top:1rem;">Do stronger provisions predict better outcomes?</p>
+    <div style="display:flex; gap:2rem; justify-content:center; margin-top:2rem;">
+      <div style="padding:12px 20px; border:2px solid var(--accent); border-radius:8px;">
+        <div style="font-size:1rem; font-weight:bold;">Paper 2</div>
+        <div style="font-size:0.9rem; color:var(--muted);">Patient-level outcomes</div>
+      </div>
+      <div style="padding:12px 20px; border:2px solid #f59e0b; border-radius:8px;">
+        <div style="font-size:1rem; font-weight:bold;">Paper 3</div>
+        <div style="font-size:0.9rem; color:var(--muted);">RN-level outcomes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SLIDE 10b: Theoretical Framework Papers 2 & 3 -->
+<section class="slide">
+  <p class="section-label">Methods — Papers 2 &amp; 3</p>
+  <h2>Conceptual Framework</h2>
+  <p style="font-size:1rem; margin-bottom:1rem;">CBA provisions shape outcomes through structure → process → outcome <span class="cite">(Donabedian, 2005)</span>. Each index operates through two mechanisms:</p>
+  <div style="display:flex; gap:20px;">
+    <div style="flex:1; border:2px solid var(--accent); border-radius:8px; padding:14px;">
+      <div style="font-size:1.05rem; font-weight:bold; color:var(--accent); margin-bottom:10px;">Staffing Provisions Index (SPI)</div>
+      <div style="font-size:0.9rem; margin-bottom:6px;"><strong>Direct:</strong> S1 standards specify ratios → binding obligation → workload constrained → nurses maintain vigilance</div>
+      <div style="font-size:0.9rem;"><strong>Voice:</strong> S3 staffing committees → nurses participate in staffing decisions → problems surfaced before they become crises</div>
+    </div>
+    <div style="flex:1; border:2px solid #dc2626; border-radius:8px; padding:14px;">
+      <div style="font-size:1.05rem; font-weight:bold; color:#dc2626; margin-bottom:10px;">Patient Safety Index (PSI)</div>
+      <div style="font-size:0.9rem; margin-bottom:6px;"><strong>Direct:</strong> P1 ADO protections → nurses formally document unsafe assignments → accountability when standards not met</div>
+      <div style="font-size:0.9rem;"><strong>Voice:</strong> P2 safety committees → forum for safety governance → systemic risks surfaced before patient harm</div>
+    </div>
+  </div>
+  <div style="text-align:center; font-size:1.3rem; color:var(--muted); margin:10px 0;">↓ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↓</div>
+  <div style="display:flex; gap:20px;">
+    <div style="flex:1; background:#1a2332; border-radius:8px; padding:10px; text-align:center;">
+      <div style="font-size:0.95rem; font-weight:bold;">Paper 2: Patient-level outcomes</div>
+      <div style="font-size:0.85rem; color:var(--muted);">Mortality, infections, patient experience</div>
+    </div>
+    <div style="flex:1; background:#1a2332; border-radius:8px; padding:10px; text-align:center;">
+      <div style="font-size:0.95rem; font-weight:bold;">Paper 3: RN-level outcomes</div>
+      <div style="font-size:0.85rem; color:var(--muted);">Staffing intensity, vacancy, contract labor</div>
+    </div>
+  </div>
+  <p style="font-size:0.85rem; margin-top:0.8rem; color:var(--muted);">SPI = S1 × S3 (standards × committees, ordinal 0–4). PSI = P1 + P2 (ordinal 0–2). S2 (workload procedures) and P3 (reporting) enter models as separate binary covariates — present in most contracts but low discriminant power.</p>
+</section>
+
+<!-- SLIDE 11: Data Architecture & Outcome Measures -->
+<section class="slide">
+  <p class="section-label">Methods — Papers 2 & 3</p>
+  <h2>Data Sources and Outcome Measures</h2>
+  <p style="font-size:0.95rem; color:var(--muted); margin-bottom:0.5rem;">The analytic panel links Paper 1 provision indices to administrative outcome data at the hospital-year level through four nested layers:</p>
+  <!-- Flowchart: Four Nested Layers (funnel) -->
+  <div style="display:flex; flex-direction:column; align-items:center; gap:6px; margin:1rem 0;">
+    <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:8px 40px; width:90%; text-align:center;">
+      <span style="color:var(--accent); font-weight:bold;">AHA Annual Survey</span> — All U.S. acute care hospitals: <strong>5,240</strong>
+    </div>
+    <div style="color:var(--accent);">↓</div>
+    <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:8px 40px; width:78%; text-align:center;">
+      <span style="color:var(--accent); font-weight:bold;">NLRB + FMCS + union lists</span> — Confirmed RN union: <strong>1,456</strong> (27.8%)
+    </div>
+    <div style="color:var(--accent);">↓</div>
+    <div style="background:#2d2d44; border:2px solid var(--accent); border-radius:8px; padding:8px 40px; width:66%; text-align:center;">
+      <span style="color:var(--accent); font-weight:bold;">FMCS notice or corpus</span> — Active RN CBA: <strong>1,386</strong> (95.2%)
+    </div>
+    <div style="color:var(--accent);">↓</div>
+    <div style="background:#2d2d44; border:2px solid var(--yellow); border-radius:8px; padding:8px 40px; width:54%; text-align:center;">
+      <span style="color:var(--yellow); font-weight:bold;">CMS-linked</span> — Analytic panel: <strong>197 hospitals, 1,152 hospital-years</strong> (2007–2024)
+    </div>
+  </div>
+  <p style="font-size:0.85rem; color:var(--muted); text-align:center;">No prior study has combined NLRB elections, FMCS notices, and union lists into a unified panel.</p>
+  <!-- Outcome Measures — split by Paper -->
+  <div style="display:flex; gap:12px; margin-top:0.8rem;">
+    <div style="flex:1;">
+      <h3 style="font-size:0.95rem; margin-bottom:4px;">Paper 2: Patient-level outcomes</h3>
+      <table style="font-size:0.85rem;">
+        <tr><th>Outcome</th><th>Source</th><th>Coverage</th></tr>
+        <tr><td>HF 30-day mortality</td><td>CMS Hospital Compare</td><td>91%</td></tr>
+        <tr><td>SSI colon SIR</td><td>CMS Hospital Compare</td><td>71%</td></tr>
+        <tr><td>HCAHPS nurse communication</td><td>CMS Hospital Compare</td><td>84%</td></tr>
+      </table>
+    </div>
+    <div style="flex:1;">
+      <h3 style="font-size:0.95rem; margin-bottom:4px;">Paper 3: RN-level outcomes</h3>
+      <table style="font-size:0.85rem;">
+        <tr><th>Outcome</th><th>Source</th><th>Coverage</th></tr>
+        <tr><td>RN FTE / bed</td><td>AHA Annual Survey</td><td>100%</td></tr>
+        <tr><td>Nursing hours / patient day</td><td>AHA Annual Survey</td><td>82%</td></tr>
+        <tr><td>Vacancy rate</td><td>AHA Annual Survey</td><td>67%</td></tr>
+        <tr><td>Contract labor %</td><td>CMS Cost Reports</td><td>64%</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 12: Empirical Strategy -->
+<section class="slide">
+  <p class="section-label">Methods — Papers 2 & 3</p>
+  <h2>Empirical Strategy</h2>
+  <!-- Dual-track flowchart -->
+  <div style="display:flex; gap:20px; margin:1rem 0;">
+    <div style="flex:1; border:2px solid var(--accent); border-radius:8px; padding:14px;">
+      <div style="font-size:1rem; color:var(--accent); font-weight:bold; margin-bottom:8px;">Primary: Correlated Random Effects <span class="cite">(Mundlak, 1978)</span></div>
+      <ul style="font-size:0.95rem;">
+        <li>Full sample: 197 hospitals, 1,152 hospital-years</li>
+        <li>Between + within-hospital variation</li>
+        <li>Hausman-type test for confounding</li>
+        <li>All estimates = <strong>associations</strong></li>
+      </ul>
+      <div style="margin-top:8px; font-size:0.85rem; color:var(--muted);">Feasibility: ICC = 0.61 (SPI), 0.68 (PSI); 34/96 hospitals changed index between contracts</div>
+    </div>
+    <div style="flex:1; border:2px solid var(--yellow); border-radius:8px; padding:14px;">
+      <div style="font-size:1rem; color:var(--yellow); font-weight:bold; margin-bottom:8px;">Secondary: Staggered DiD <span class="cite">(Callaway & Sant'Anna, 2021)</span></div>
+      <ul style="font-size:0.95rem;">
+        <li>Subset: 96 hospitals with transitions</li>
+        <li>Treatment: CBA ratification timing (predetermined by expiration dates)</li>
+        <li>Cohort sizes: 4–5 hospitals</li>
+        <li>Results = <strong>suggestive corroboration</strong></li>
+      </ul>
+    </div>
+  </div>
+  <h3>Sensitivity</h3>
+  <p>Oster bounds <span class="cite">(Oster, 2019)</span> and E-values quantify unobserved confounding. Romano-Wolf stepdown correction (6 primary tests per paper).</p>
+</section>
+
+<!-- SLIDE 13: Limitations -->
+<section class="slide">
+  <p class="section-label">Limitations</p>
+  <h2>Limitations and Mitigation Strategies</h2>
+  <table>
+    <tr><th>Limitation</th><th>Mitigation</th></tr>
+    <tr><td><strong>AFT union partner skew:</strong> 65% of corpus from single union</td><td>OLMS phase provides multi-union coverage; sensitivity analyses with/without AFT contracts</td></tr>
+    <tr><td><strong>Geographic concentration:</strong> Four states (OR, WA, OH, MT) = 56% of corpus</td><td>OLMS phase covers 39 states (multi-union); balance table characterizes selection vs. full union hospital universe (1,456)</td></tr>
+    <tr><td><strong>California AB 394:</strong> Unique mandatory ratio law — CBA provisions operate on top of legislative floor</td><td>All primary results reported with and without California</td></tr>
+    <tr><td><strong>Single coder:</strong> 269,973 classification decisions</td><td>ML-assisted workflow + anchoring bias check + union staff review + audit trail</td></tr>
+    <tr><td><strong>Implementation fidelity:</strong> Contract text ≠ practice</td><td>Acknowledged as attenuation; grievance rates as proxy <span class="cite">(FMCS data)</span></td></tr>
+    <tr><td><strong>Unobserved confounding:</strong> CBA provisions are endogenous to bargaining</td><td>Sensitivity analyses: Oster bounds <span class="cite">(Oster, 2019)</span> + E-values quantify required confounding strength; staggered DiD as secondary</td></tr>
+  </table>
+</section>
+
+<!-- SLIDE 14: Timeline -->
+<section class="slide">
+  <p class="section-label">Feasibility</p>
+  <h2>Timeline and Feasibility</h2>
+  <div class="two-col">
+    <div>
+      <h3>Completed</h3>
+      <ul>
+        <li>✓ 607 contracts acquired, parsed, classified</li>
+        <li>✓ 269,973 provisions human-validated</li>
+        <li>✓ Hospital-year panel linked to CMS</li>
+        <li>✓ Strength indices operational</li>
+        <li>✓ Two rounds of union staff review</li>
+        <li>✓ IRB exempt determination</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Remaining (Sep–Nov 2026)</h3>
+      <ul>
+        <li>Sep: Anchoring bias check; draft Paper 1</li>
+        <li>Oct: Outcome models (Papers 2 & 3)</li>
+        <li>Nov: Manuscripts; dissertation defense</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:1rem;">The measurement infrastructure — which consumed the majority of development time — is complete. What remains is analysis and writing.</p>
+</section>
+
+<!-- SLIDE 15: Contributions -->
+<section class="slide">
+  <p class="section-label">Summary</p>
+  <h2>Expected Contributions</h2>
+  <ul>
+    <li><strong>Measurement infrastructure:</strong> First provision-level database of staffing and patient safety content in nurse CBAs (607 contracts, 269,973 provisions)</li>
+    <li><strong>Descriptive mapping:</strong> How provisions vary across hospitals, unions, states, and time</li>
+    <li><strong>Empirical estimates:</strong> First associations between contractual provision strength and hospital outcomes</li>
+  </ul>
+  <div class="highlight" style="margin-top:2rem;">
+    If hospitals with strong provisions outperform those with weak provisions — even though both are unionized — then the field needs measures of what contracts contain. If results are null, the measurement infrastructure enables future research.
+  </div>
+  <p style="margin-top:2rem; text-align:center; font-size:1.2rem;">Thank you. I welcome your questions.</p>
+</section>
+
+<!-- ============================================================ -->
+<!-- ============================================================
+     SUPPLEMENT FOR PubH 8435 (Leighton Ku's class, 2026-09-28) — v2
+     Tone: humble/descriptive (not "my approach is best").
+     Adds: (1) our AI = supervised classifier, NOT a generative LLM;
+           (2) researcher reflexivity woven through the process;
+           (3) framed as OUR CHOICE with reasons — LLMs are fine too.
+     Appended after the 18 main slides. Same CSS/theme.
+     ============================================================ -->
+
+<section class="slide" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);">
+  <div class="section-label">For This Class — A Look Under the Hood</div>
+  <h1 style="font-size:2.5rem;">How I built the measurement &mdash; and how I tried to stay honest about it</h1>
+  <p class="subtitle" style="font-size:1.25rem;">A walk-through of the coding process, the tools I chose, and the trade-offs</p>
+  <div class="highlight" style="font-size:1.12rem;">
+    Everything so far was the committee version. For the next few slides I want to
+    share the measurement engine &mdash; not as "the right way," but as
+    <strong>the choices I made</strong>, why I made them, and what I'd flag for
+    anyone coding text in their own work.
+  </div>
+</section>
+<section class="slide">
+  <div class="section-label">The starting dilemma</div>
+  <h2>Why not all-by-hand, and why not all-by-machine</h2>
+  <div class="two-col">
+    <div class="stat-box" style="text-align:left;">
+      <h3 style="margin-top:0;">All by hand</h3>
+      <ul style="font-size:1rem;">
+        <li><strong>269,973</strong> provisions across 607 contracts</li>
+        <li>At ~15 sec each &rarr; <strong>&gt;1,100 hours</strong></li>
+        <li>Not feasible for one person in a dissertation</li>
+      </ul>
+    </div>
+    <div class="stat-box" style="text-align:left;">
+      <h3 style="margin-top:0;">All by machine, unchecked</h3>
+      <ul style="font-size:1rem;">
+        <li>Fast, but no human ground truth to check against</li>
+        <li>Hard to explain or audit a label later</li>
+        <li>Small errors would compound quietly across 270K rows</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight">
+    So I landed in the middle: hand-code enough to train and check, let the model
+    draft the rest, and keep a human on every label. It's a practical compromise,
+    with its own trade-offs.
+  </div>
+</section>
+<section class="slide">
+  <div class="section-label">Overview — AI + Human collaboration</div>
+  <h2>From PDF to index: the full pipeline</h2>
+  <div style="display:grid; grid-template-columns:1.05fr 0.95fr; gap:1.6rem; margin-top:0.8rem; font-size:1rem;">
+
+    <!-- LEFT col header -->
+    <div style="font-size:1rem; color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; padding-bottom:0.3rem; border-bottom:1px solid var(--accent);">Pipeline step</div>
+    <div style="font-size:1rem; color:var(--yellow); text-transform:uppercase; letter-spacing:0.1em; padding-bottom:0.3rem; border-bottom:1px solid var(--yellow);">What I kept record of at this step</div>
+
+    <!-- Row 1 -->
+    <div style="background:#1e3a5f; border-radius:6px; padding:8px 12px; line-height:1.4;">
+      <strong>📄 Scanned PDF contracts</strong><br>
+      <span style="color:#aaa; font-size:1rem;">607 contracts · 39 states · OLMS + AFT corpora</span>
+    </div>
+    <div style="background:#2a1f00; border-left:3px solid var(--yellow); border-radius:0 6px 6px 0; padding:8px 12px; line-height:1.4; color:#ccc;">
+      <strong style="color:var(--yellow);">Corpus construction log</strong><br>
+      <span style="font-size:1rem;">Inclusion/exclusion criteria for each contract · OLMS pre-2010 skew noted · source provenance</span>
+    </div>
+
+    <!-- arrow -->
+    <div style="text-align:center; color:var(--accent); font-size:1rem; padding:1px 0;">↓ Docling OCR + table parsing</div>
+    <div></div>
+
+    <!-- Row 2 -->
+    <div style="background:#1e3a5f; border-radius:6px; padding:8px 12px; line-height:1.4;">
+      <strong>📝 Structured text (Markdown/JSON)</strong><br>
+      <span style="color:#aaa; font-size:1rem;">Sections, paragraphs, tables preserved</span>
+    </div>
+    <div style="background:#2a1f00; border-left:3px solid var(--yellow); border-radius:0 6px 6px 0; padding:8px 12px; line-height:1.4; color:#ccc;">
+      <strong style="color:var(--yellow);">OCR failure log</strong><br>
+      <span style="font-size:1rem;">Contracts with 0 clauses flagged for human re-check · table extraction edge cases noted</span>
+    </div>
+
+    <!-- arrow -->
+    <div style="text-align:center; color:var(--accent); font-size:1rem; padding:1px 0;">↓ Clause segmentation → 269,973 provisions</div>
+    <div></div>
+
+    <!-- Row 3 -->
+    <div style="background:#1e3a5f; border-radius:6px; padding:8px 12px; line-height:1.4;">
+      <strong>👤 I hand-code 85,629 provisions</strong><br>
+      <span style="color:#aaa; font-size:1rem;">Ground-truth labels · 7 tags · codebook iterated</span>
+    </div>
+    <div style="background:#2a1f00; border-left:3px solid var(--yellow); border-radius:0 6px 6px 0; padding:8px 12px; line-height:1.4; color:#ccc;">
+      <strong style="color:var(--yellow);">Codebook decision log</strong><br>
+      <span style="font-size:1rem;">Every tag rule change logged with rationale · member checking × 2 rounds (7 AFT/SEIU practitioners)</span>
+    </div>
+
+    <!-- arrow -->
+    <div style="text-align:center; color:var(--accent); font-size:1rem; padding:1px 0;">↓ Fine-tune DistilBERT on labeled subset</div>
+    <div></div>
+
+    <!-- Row 4 -->
+    <div style="background:#1e3a5f; border-radius:6px; padding:8px 12px; line-height:1.4;">
+      <strong>🤖 Classifier trained &amp; evaluated</strong><br>
+      <span style="color:#aaa; font-size:1rem;">Micro F1 = 0.92 · 7 tags · 20 held-out contracts</span>
+    </div>
+    <div style="background:#2a1f00; border-left:3px solid var(--yellow); border-radius:0 6px 6px 0; padding:8px 12px; line-height:1.4; color:#ccc;">
+      <strong style="color:var(--yellow);">Performance log — honest reporting</strong><br>
+      <span style="font-size:1rem;">Per-tag F1 reported openly, not just the headline — details ahead</span>
+    </div>
+
+    <!-- arrow -->
+    <div style="text-align:center; color:var(--accent); font-size:1rem; padding:1px 0;">↓ Apply to full corpus · I verify every label</div>
+    <div></div>
+
+    <!-- Row 5 -->
+    <div style="background:#1e3a5f; border-radius:6px; padding:8px 12px; line-height:1.4;">
+      <strong>👤 PI review — all 269,973 provisions</strong><br>
+      <span style="color:#aaa; font-size:1rem;">Corrections made iteratively · anchor-gated index</span>
+    </div>
+    <div style="background:#2a1f00; border-left:3px solid var(--yellow); border-radius:0 6px 6px 0; padding:8px 12px; line-height:1.4; color:#ccc;">
+      <strong style="color:var(--yellow);">Self-correction log</strong><br>
+      <span style="font-size:1rem;">"Binding" over-coded 81% → corrected to honest ~11–14% · every correction documented</span>
+    </div>
+
+    <!-- arrow -->
+    <div style="text-align:center; color:var(--accent); font-size:1rem; padding:1px 0;">↓ Index construction</div>
+    <div></div>
+
+    <!-- Row 6 -->
+    <div style="background:#0a3d62; border:2px solid var(--accent); border-radius:6px; padding:8px 12px; line-height:1.4;">
+      <strong>📊 SPI · OSI · PCGI indices</strong><br>
+      <span style="color:#aaa; font-size:1rem;">197 hospitals · 1,106 hospital-years · 2007–2024</span>
+    </div>
+    <div style="background:#2a1f00; border-left:3px solid var(--yellow); border-radius:0 6px 6px 0; padding:8px 12px; line-height:1.4; color:#ccc;">
+      <strong style="color:var(--yellow);">Second coder / ICR <span style="font-size:1rem;">[Planned]</span></strong><br>
+      <span style="font-size:1rem;">Stratified sample (200 provisions) · Polly as second coder · after PI review cycle</span>
+    </div>
+
+  </div>
+  <p class="cite" style="margin-top:0.5rem; font-size:1rem;">Lincoln &amp; Guba 1985 · Malterud 2001 · Hsieh &amp; Shannon 2005</p>
+</section>
+<section class="slide">
+  <div class="section-label">Before any coding &mdash; getting the text out</div>
+  <h2>Turning scanned PDFs into machine-readable text</h2>
+  <p>Most of these contracts are <strong>scanned PDFs</strong> &mdash; essentially images. A computer can't read the words yet, so nothing downstream works until I fix that.</p>
+  <div class="two-col">
+    <div style="border:2px solid var(--accent); border-radius:8px; padding:16px;">
+      <h3 style="margin-top:0; color:var(--accent);">What I used: Docling</h3>
+      <ul>
+        <li>An <strong>open-source</strong> document parser</li>
+        <li>Runs <strong>OCR</strong> &mdash; turns the page image into real text</li>
+        <li>Keeps the <strong>structure</strong>: sections, paragraphs, and tables</li>
+        <li>Runs <strong>locally</strong> &mdash; contracts never leave the machine</li>
+      </ul>
+    </div>
+    <div style="border:2px solid var(--yellow); border-radius:8px; padding:16px;">
+      <h3 style="margin-top:0; color:var(--yellow);">Why it matters</h3>
+      <ul>
+        <li>Tables matter: <strong>nurse-patient ratios</strong> often live inside tables, not sentences</li>
+        <li>Outputs clean, structured text I can split into clauses</li>
+        <li>Quality gate: if a file yields <strong>zero</strong> clauses, it's flagged for manual review, not silently dropped</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight">
+    Pipeline: <strong>scanned PDF &rarr; Docling (OCR + structure) &rarr; structured text &rarr; split into clauses &rarr; classifier</strong>.
+    This first step is easy to underestimate &mdash; but if it's wrong, everything after it is wrong.
+  </div>
+</section>
+<section class="slide">
+  <div class="section-label">How the coding actually ran</div>
+  <h2>The model drafts; a person confirms every label</h2>
+  <div style="display:flex; gap:14px; align-items:center; margin:1rem 0; flex-wrap:wrap;">
+    <div class="stat-box"><div class="num">607</div><div class="label">contracts (PDF &rarr; OCR)</div></div>
+    <div style="font-size:1.6rem; color:var(--accent);">&rarr;</div>
+    <div class="stat-box"><div class="num">269,973</div><div class="label">provisions segmented</div></div>
+    <div style="font-size:1.6rem; color:var(--accent);">&rarr;</div>
+    <div class="stat-box"><div class="num">2 tracks</div><div class="label">hand-coded + model-assisted</div></div>
+  </div>
+  <div class="two-col">
+    <div style="border:2px solid var(--accent); border-radius:8px; padding:12px;">
+      <h3 style="margin-top:0; color:var(--accent);">Track A &mdash; Hand-coded</h3>
+      <p style="font-size:1rem;">214 contracts &middot; 85,629 provisions &middot; this is the training ground truth</p>
+    </div>
+    <div style="border:2px solid var(--yellow); border-radius:8px; padding:12px;">
+      <h3 style="margin-top:0; color:var(--yellow);">Track B &mdash; Model-assisted</h3>
+      <p style="font-size:1rem;">393 contracts &middot; 184,344 provisions &middot; model draft-tags &rarr; a person confirms each (about 92% kept, 8% corrected)</p>
+    </div>
+  </div>
+  <div class="highlight">
+    The model is a <em>labor-saving tool, not the analyst</em>. It cut coding time
+    roughly 60%, but no label entered the data without a human signing off.
+    One note I'd flag: I split train/test by <strong>contract</strong>, not by clause,
+    so shared wording within a contract doesn't leak in and inflate the score.
+  </div>
+</section>
+<section class="slide">
+  <div class="section-label">What kind of "AI" this is</div>
+  <h2>Not ChatGPT &mdash; a supervised classifier I trained myself</h2>
+  <p style="font-size:1.08rem;">A point worth being precise about, because "AI" now usually means something else:</p>
+  <table style="font-size:1rem;">
+    <tr><th></th><th>What I used</th><th>What people usually mean by "AI" today</th></tr>
+    <tr><td><strong>Tool</strong></td><td>DistilBERT (a small, distilled BERT)</td><td>ChatGPT / GPT-4 &mdash; large generative LLMs</td></tr>
+    <tr><td><strong>What it does</strong></td><td>Reads a clause &rarr; <strong>labels</strong> it into my categories</td><td>General-purpose: generates text and reasons over it</td></tr>
+    <tr><td><strong>How it learns</strong></td><td>Fine-tuned on <strong>my own hand-coded labels</strong></td><td>General pre-training I don't control</td></tr>
+    <tr><td><strong>Where it runs</strong></td><td>Locally, deterministic, reproducible</td><td>Cloud, general-purpose</td></tr>
+  </table>
+  <div class="highlight" style="font-size:1.05rem;">
+    Mine is a <strong>classifier</strong>: text in &rarr; a label from my codebook out. Not because it's better than an LLM &mdash; but because tying each label to categories <em>I</em> defined keeps the measure reproducible and auditable.
+  </div>
+  <div style="margin-top:1.2rem; padding:0.9rem 1.2rem; background:rgba(255,255,255,0.06); border-left:3px solid var(--accent); font-size:1rem; line-height:1.6; color:#c8d6e5;">
+    <strong style="color:var(--accent);">In methodological terms:</strong> this is a <em>discriminative</em> model — it learns P(label|text) from labelled examples. Generative LLMs learn P(text) and can reason broadly. The distinction matters for measurement: discriminative classifiers are tied to a defined construct and produce deterministic, auditable outputs. <span style="opacity:0.7; font-size:0.9rem;">(Grimmer &amp; Stewart, 2013 <em>Political Analysis</em>; Devlin et al. 2019 <em>NAACL</em>)</span>
+  </div>
+</section>
+<section class="slide">
+  <div class="section-label">Training &amp; evaluation</div>
+  <h2>Turning hand-coded labels into a working classifier</h2>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:1.2rem; font-size:1rem;">
+
+    <div>
+      <p style="font-weight:700; color:var(--accent); margin-bottom:0.5rem;">What I trained on</p>
+      <ul style="margin:0; padding-left:1.2rem; line-height:1.8;">
+        <li>Hand-coded corpus: 214 contracts · 85,629 provisions · 7 tags</li>
+        <li>Contract-level split: <strong>182 contracts for training</strong> (85%) · 32 held out for evaluation (15%)</li>
+        <li>Model: <strong>DistilBERT</strong> (distilbert-base-uncased) fine-tuned on the training set</li>
+        <li>Runs fully locally — contract text never leaves the machine</li>
+        <li>Class-balanced: X0 = 86% of clauses → downsampled + per-class weighting to surface rare tags</li>
+      </ul>
+    </div>
+
+    <div>
+      <p style="font-weight:700; color:var(--accent); margin-bottom:0.5rem;">How I tested it — deliberately strict</p>
+      <ul style="margin:0; padding-left:1.2rem; line-height:1.8;">
+        <li><strong>Contract-level split</strong>: 32 entire contracts held out (15%), coded from scratch</li>
+        <li>Not random sentences — whole contracts, never seen during training</li>
+        <li>Why stricter: a Kaiser clause reads differently from an ONA clause — held-out contracts test generalization across negotiating styles and union templates, not just unseen sentences from familiar contracts</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="margin-top:1.4rem; background:var(--light); border-left:4px solid var(--accent); padding:0.8rem 1.2rem; font-size:1rem;">
+    <strong>Result: Micro F1 = 0.92</strong> &mdash;
+    the model agrees with my hand codes 92% of the time overall.
+    But it is a <em>draft tool</em>: I confirm every label it produces.
+    F1 measures draft quality and coding efficiency &mdash; not final label accuracy.
+    (Final label accuracy = PI review, all 269,973 provisions.)
+  </div>
+
+  <p style="margin-top:0.8rem; font-size:0.88rem; opacity:0.65;">
+    Devlin et al. 2019 <em>NAACL</em> (BERT) &middot; contract-level split
+  </p>
+</section>
+
+<section class="slide">
+  <div class="section-label">Why I chose it &mdash; my decision, not a verdict on LLMs</div>
+  <h2>An LLM would be a fine tool. For this project, this one was easier to defend.</h2>
+  <div class="two-col">
+    <div style="border:2px solid var(--accent); border-radius:8px; padding:14px;">
+      <h3 style="margin-top:0; color:var(--accent);">Why a supervised classifier fit my case</h3>
+      <ul style="font-size:1rem;">
+        <li><strong>Ground truth I own:</strong> trained on my own hand codes &rarr; I can trace &amp; explain what it learned</li>
+        <li><strong>Reproducible:</strong> same input &rarr; same output, so the audit trail stays clean</li>
+        <li><strong>Runs locally:</strong> sensitive union contracts never leave the machine</li>
+      </ul>
+    </div>
+    <div style="border:2px solid var(--yellow); border-radius:8px; padding:14px;">
+      <h3 style="margin-top:0; color:var(--yellow);">To be clear</h3>
+      <ul style="font-size:1rem;">
+        <li>I'm <strong>not</strong> saying you can't use an LLM &mdash; you can, and many good studies do</li>
+        <li>It's a <strong>choice</strong> driven by my data (sensitive, needs auditability) and my need to defend every label</li>
+        <li>Different tools fit different questions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="slide" style="background:linear-gradient(135deg,#1a1a2e 0%,#1e2a3e 100%);">
+  <div class="section-label">The principle underneath all of it</div>
+  <h2>Reflexivity &mdash; staying aware that these are <em>my</em> judgments</h2>
+  <p style="font-size:1.08rem;">
+    Reflexivity is a core commitment in qualitative work: the researcher stays
+    conscious of how their own assumptions and decisions shape the coding &mdash;
+    and makes that process transparent. It isn't claiming "no bias"; it's building
+    <strong>checks against my own judgment, as I go</strong>.
+    <span class="cite">(Lincoln &amp; Guba 1985; Malterud 2001)</span>
+  </p>
+  <h3>How I tried to practice it <em>during</em> the work, not after:</h3>
+  <ul style="font-size:1.05rem;">
+    <li><strong>Member checking (2 rounds):</strong> I brought the taxonomy back to union staff (AFT + SEIU) to challenge my categories &mdash; they even proposed categories that turned out to have <em>zero</em> provisions, which told me the scheme was grounded in the text, not my assumptions <span class="cite">(conventional content analysis; Hsieh &amp; Shannon 2005)</span></li>
+    <li><strong>Planned &mdash; second coder / ICR:</strong> my chair will code a stratified sample for inter-coder reliability (part of the verification plan, not yet done)</li>
+    <li><strong>Audit trail:</strong> every coding decision version-controlled &mdash; traceable and reversible</li>
+    <li><strong>Reporting my weak spots</strong> (next slide) rather than only the flattering numbers</li>
+  </ul>
+</section>
+<section class="slide">
+  <div class="section-label">Checking myself &mdash; honestly</div>
+  <h2>What worked, and where it's weak</h2>
+  <div class="two-col">
+    <div style="border:2px solid var(--accent); border-radius:8px; padding:12px;">
+      <h3 style="margin-top:0; color:var(--accent);">Classifier performance</h3>
+      <ul style="font-size:1rem;">
+        <li>F1 micro = 0.92 (agrees with hand codes 92% of the time)</li>
+        <li>F1 macro = 0.67 &mdash; lower, because rare categories are hard</li>
+        <li>Per-class: X0 = 0.96, S1 = 0.82 &hellip; <strong>P2 = 0.45</strong></li>
+        <li>Checked on 32 held-out contracts hand-coded from scratch (true out-of-sample)</li>
+      </ul>
+    </div>
+    <div style="border:2px solid var(--yellow); border-radius:8px; padding:12px;">
+      <h3 style="margin-top:0; color:var(--yellow);">A tag is not yet a measure</h3>
+      <ul style="font-size:1rem;">
+        <li>"1:4" might be a clock time, a pay rate, a section number &mdash; not a staffing ratio</li>
+        <li>So the index uses <strong>mask-then-match</strong>: hide non-staffing numbers, then require a real ratio + binding language ("shall," "at all times")</li>
+        <li>The tag count is only an upper bound; the gated index is lower and cleaner</li>
+      </ul>
+    </div>
+  </div>
+  <p class="cite">Being explicit about P2 = 0.45, and correcting my own inflated "binding" count down to an honest ~11&ndash;14%, is part of the same reflexive discipline.</p>
+</section>
+<section class="slide" style="background:linear-gradient(135deg,#16213e 0%,#1a1a2e 100%);">
+  <div class="section-label">What this process taught me</div>
+  <h2>A few reflections &mdash; take what's useful for your own work</h2>
+  <ul style="font-size:1.15rem; line-height:1.9;">
+    <li>The tool doesn't have to be the newest thing &mdash; I chose a supervised classifier because it fit my data and let me <strong>defend every label</strong>. An LLM could work too; it's about the fit.</li>
+    <li>Automation is worth it, but I kept a <strong>human on every label</strong> I'd have to stand behind.</li>
+    <li>I stayed <strong>reflexive on purpose</strong> &mdash; member checking, a second coder, an audit trail, and reporting my weak numbers &mdash; because the categories are, in the end, <em>my</em> judgments.</li>
+  </ul>
+  <div class="highlight" style="font-size:1.12rem; margin-top:1rem;">
+    Happy to talk more &mdash; about the classifier, the verification, or how any of
+    this might apply to coding text in your own dissertations.
+  </div>
+</section>
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  function current(){
+    var y = window.scrollY, best=0, bd=1e9;
+    slides.forEach(function(s,i){ var d=Math.abs(s.offsetTop - y); if(d<bd){bd=d;best=i;} });
+    return best;
+  }
+  function go(i){ i=Math.max(0,Math.min(slides.length-1,i)); slides[i].scrollIntoView({behavior:'smooth'}); }
+
+  // auto page numbers — every slide gets "N / total"
+  var total = slides.length;
+  slides.forEach(function(s,i){
+    var p = document.createElement('div');
+    p.textContent = (i+1) + ' / ' + total;
+    p.style.cssText = 'position:absolute; bottom:30px; right:60px; font-size:0.9rem; color:#888;';
+    s.appendChild(p);
+  });
+
+  document.addEventListener('keydown', function(e){
+    var k=e.key;
+    if(k==='PageDown'||k==='ArrowRight'||k==='ArrowDown'||k===' '){ e.preventDefault(); go(current()+1); }
+    else if(k==='PageUp'||k==='ArrowLeft'||k==='ArrowUp'){ e.preventDefault(); go(current()-1); }
+    else if(k==='Home'){ e.preventDefault(); go(0); }
+    else if(k==='End'){ e.preventDefault(); go(slides.length-1); }
+  });
+
+  // Hash-based navigation: #20 → slide 20 (1-indexed)
+  function goHash(){
+    var h = window.location.hash.replace('#','');
+    var n = parseInt(h,10);
+    if(!isNaN(n) && n>=1){ setTimeout(function(){ go(n-1); }, 100); }
+  }
+  window.addEventListener('hashchange', goHash);
+  goHash();
+})();
+</script>
+
+</body>
+</html>
